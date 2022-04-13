@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="397.0" prefWidth="354.0" style="-fx-background-color: white; -fx-border-color: gray; -fx-border-width: 1px; -fx-border-radius: 10px; -fx-background-radius: 10px;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="system.controller.CA_1dFrameController">
+   <children>
+      <VBox layoutX="-9.0" layoutY="25.0">
+         <children>
+            <Text fill="#d41366" strokeType="OUTSIDE" strokeWidth="0.0" text="一维CA加密实现" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="25.0" left="130.0" />
+               </VBox.margin>
+            </Text>
+            <VBox alignment="CENTER" prefHeight="275.0" prefWidth="360.0">
+               <children>
+                  <VBox prefHeight="238.0" prefWidth="321.0" spacing="25.0">
+                     <children>
+                        <HBox>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="长  度：  " textAlignment="RIGHT" wrappingWidth="137.04022216796875">
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <TextField fx:id="length" prefHeight="16.0" prefWidth="162.0" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="初始化：  " textAlignment="RIGHT" wrappingWidth="137.04022216796875">
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <TextField fx:id="initialization" prefHeight="16.0" prefWidth="162.0" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="规  则：  " textAlignment="RIGHT" wrappingWidth="137.04022216796875">
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <TextField fx:id="rule" prefHeight="16.0" prefWidth="162.0" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="随机位：  " textAlignment="RIGHT" wrappingWidth="137.04022216796875">
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <TextField fx:id="random" prefHeight="16.0" prefWidth="162.0" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="明  文：  " textAlignment="RIGHT" wrappingWidth="137.04022216796875">
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <TextField fx:id="plaintext" prefHeight="16.0" prefWidth="162.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <JFXButton fx:id="okBT" buttonType="RAISED" onAction="#bt_okEvent" prefHeight="20.0" prefWidth="100.0" ripplerFill="#ff9d73" style="-fx-background-color: pink;" text="确  定" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="45.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <FontAwesomeIconView fx:id="exitButton" accessibleRole="BUTTON" glyphName="CLOSE" layoutX="300.0" layoutY="50.0" onMouseClicked="#close" size="30" />
+   </children>
+</AnchorPane>

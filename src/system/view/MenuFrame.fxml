@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white; -fx-border-color: gray; -fx-border-image-width: 1px; -fx-background-radius: 10px; -fx-border-radius: 10px;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="system.controller.MenuFrameController">
+   <children>
+      <VBox layoutX="150.0" layoutY="80.0" spacing="45.0">
+         <children>
+            <JFXButton fx:id="bt_Single" buttonType="RAISED" onAction="#bt_SingleEvent" prefHeight="50.0" prefWidth="300.0" ripplerFill="#ffb5b5" style="-fx-background-color: F998B5;" text="单机加解密" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="bt_enClient" buttonType="RAISED" onAction="#bt_enClientEvent" prefHeight="50.0" prefWidth="300.0" ripplerFill="#ffb5b5" style="-fx-background-color: F998B5;" text="双机--加密端" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="bt_deServer" buttonType="RAISED" onAction="#bt_deServerEvent" prefHeight="50.0" prefWidth="300.0" ripplerFill="#ffb5b5" style="-fx-background-color: F998B5;" text="双机--解密端" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <FontAwesomeIconView fx:id="exitButton" accessibleRole="BUTTON" glyphName="CLOSE" layoutX="550.0" layoutY="51.0" onMouseClicked="#close" size="30" />
+   </children>
+</AnchorPane>
