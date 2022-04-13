@@ -4,7 +4,7 @@
 ③将编写完的后端算法封装好，便于从前端直接调用。
 ④双机加解密系统实现过程中，所有的算法仍然是直接调用，但是需要将加密功能和解密功能分开到两个不同的controller类中（实现单机时，通过单选按钮选择加密还是解密模式），才能在两端显示。
   
- 下面是软件运行界面截图
+ 下面是软件运行界面截图  
 ![图片1](https://user-images.githubusercontent.com/62821148/163166630-b53612a4-024f-4cc4-b35e-1d05306ae4b3.png)
 ![图片2](https://user-images.githubusercontent.com/62821148/163166604-3addcfab-72be-44d3-a23c-9161cb8a4dcb.png)
 ![图片3](https://user-images.githubusercontent.com/62821148/163166615-39caee35-e3dd-4a77-9c40-0aab684f168b.png)
